@@ -1,0 +1,530 @@
+\documentclass[a4paper,landscape,10pt]{article}
+\usepackage[paper=a4paper,landscape,left=20mm,right=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{color}
+\usepackage{colortbl}
+\definecolor{green}{rgb}{0.04,0.68,0.04}
+\definecolor{orange}{rgb}{0.97,0.65,0.12}
+\definecolor{red}{rgb}{0.75,0.04,0.04}
+\definecolor{gray}{rgb}{0.86,0.86,0.86}
+
+\usepackage[pdftex,
+            colorlinks=true, linkcolor=red, urlcolor=green, citecolor=red,%
+            raiselinks=true,%
+            bookmarks=true,%
+            bookmarksopenlevel=1,%
+            bookmarksopen=true,%
+            bookmarksnumbered=true,%
+            hyperindex=true,% 
+            plainpages=false,% correct hyperlinks
+            pdfpagelabels=true%,% view TeX pagenumber in PDF reader
+            %pdfborder={0 0 0.5}
+            ]{hyperref}
+
+\hypersetup{pdftitle={Coverage Report},
+            pdfauthor={ReportGenerator - 4.6.7.0}
+           }
+
+\pagestyle{fancy}
+\fancyhead[LE,LO]{\leftmark}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{ReportGenerator - 4.6.7.0}
+
+\begin{document}
+
+\setcounter{secnumdepth}{-1}
+\section{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Generated on:} & 11/8/2020 - 4:25:05 PM\\
+\textbf{Parser:} & CoberturaParser\\
+\textbf{Assemblies:} & 1\\
+\textbf{Classes:} & 5\\
+\textbf{Files:} & 5\\
+\textbf{Covered lines:} & 95\\
+\textbf{Uncovered lines:} & 33\\
+\textbf{Coverable lines:} & 128\\
+\textbf{Total lines:} & 250\\
+\textbf{Line coverage:} & 74.2\% (95 of 128)\\
+\textbf{Covered branches:} & 19\\
+\textbf{Total branches:} & 34\\
+\textbf{Branch coverage:} & 55.8\% (19 of 34)\\
+\end{longtable}
+\section{Risk Hotspots}
+No risk hotspots found.
+\section{Coverage}
+\begin{longtable}[l]{|l|r|r|r|r|r|r|}
+\hline
+\textbf{Name} & \textbf{Covered} & \textbf{Uncovered} & \textbf{Coverable} & \textbf{Total} & \textbf{Line coverage} & \textbf{Branch coverage}\\
+\hline
+\textbf{PhD\_AUT\_Project} & \textbf{95} & \textbf{33} & \textbf{128} & \textbf{250} & \textbf{74.2\%} & \textbf{55.8\%}\\
+\hline
+ExcelDataAttribute & 47 & 2 & 49 & 92 & 95.9\% & 77.7\%\\
+\hline
+PhD\_AUT\_Project.LoginPage & 18 & 5 & 23 & 41 & 78.2\% & 83.3\%\\
+\hline
+PhD\_AUT\_Project.MainPage & 6 & 26 & 32 & 54 & 18.7\% & 0\%\\
+\hline
+PhD\_AUT\_Project.Page & 3 & 0 & 3 & 21 & 100\% & \\
+\hline
+PhD\_AUT\_Project.Tests.LoginPageTests & 21 & 0 & 21 & 42 & 100\% & \\
+\hline
+\end{longtable}
+\newpage
+\section{ExcelDataAttribute}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & ExcelDataAttribute\\
+\textbf{Assembly:} & PhD\_AUT\_Project\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Tests\textbackslash ExcelDataAttribute.cs}\end{minipage} \\
+\textbf{Covered lines:} & 47\\
+\textbf{Uncovered lines:} & 2\\
+\textbf{Coverable lines:} & 49\\
+\textbf{Total lines:} & 92\\
+\textbf{Line coverage:} & 95.9\% (47 of 49)\\
+\textbf{Covered branches:} & 14\\
+\textbf{Total branches:} & 18\\
+\textbf{Branch coverage:} & 77.7\% (14 of 18)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{.cctor()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{.ctor(...)} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_FileName()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_QueryString()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{GetData(...)} & 50.0\% & 2 & 83.33\%\\
+\hline
+\textbf{DataSource()} & 100\% & 2 & 100\%\\
+\hline
+\textbf{<>m\_\_Finally1()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{GetFullFilename(...)} & 100\% & 1 & 100\%\\
+\hline
+\textbf{ConvertParameters(..} & 75.00\% & 4 & 100\%\\
+\hline
+\textbf{ConvertParameter(...} & 80.0\% & 10 & 90.0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Tests\textbackslash ExcelDataAttribute.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System.Collections.Generic;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using System.Data;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using System.Data.OleDb;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using System.Globalization;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using System.IO;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~using System.Linq;~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~using System.Reflection;~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~using Xunit.Sdk;~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~[AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~public sealed class ExcelDataAttribute : DataAttribute~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~{~\\
+\cellcolor{green} & 1 & \verb~14~ & & \verb~    readonly static string connectionTemplate =~\\
+\cellcolor{green} & 1 & \verb~15~ & & \verb~        "Provider=Microsoft.ACE.OLEDB.12.0; Data Source={0}; Extended Properties='Excel 12.0;HDR=YES;IMEX=1;';";~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~~\\
+\cellcolor{green} & 6 & \verb~17~ & & \verb~    public ExcelDataAttribute(string fileName, string queryString)~\\
+\cellcolor{green} & 6 & \verb~18~ & & \verb~    {~\\
+\cellcolor{green} & 6 & \verb~19~ & & \verb~        FileName = fileName;~\\
+\cellcolor{green} & 6 & \verb~20~ & & \verb~        QueryString = queryString;~\\
+\cellcolor{green} & 6 & \verb~21~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~22~ & & \verb~~\\
+\cellcolor{green} & 12 & \verb~23~ & & \verb~    public string FileName { get; private set; }~\\
+\cellcolor{gray} &  & \verb~24~ & & \verb~~\\
+\cellcolor{green} & 12 & \verb~25~ & & \verb~    public string QueryString { get; private set; }~\\
+\cellcolor{gray} &  & \verb~26~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~27~ & & \verb~    public override IEnumerable<object[]> GetData(MethodInfo testMethod)~\\
+\cellcolor{green} & 6 & \verb~28~ & & \verb~    {~\\
+\cellcolor{orange} & 6 & \verb~29~ & & \verb~        if (testMethod == null)~\\
+\cellcolor{red} & 0 & \verb~30~ & & \verb~            throw new ArgumentNullException("testMethod");~\\
+\cellcolor{gray} &  & \verb~31~ & & \verb~~\\
+\cellcolor{green} & 6 & \verb~32~ & & \verb~        ParameterInfo[] pars = testMethod.GetParameters();~\\
+\cellcolor{green} & 42 & \verb~33~ & & \verb~        return DataSource(FileName, QueryString, pars.Select(par => par.ParameterType).ToArray());~\\
+\cellcolor{green} & 6 & \verb~34~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~35~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~36~ & & \verb~    IEnumerable<object[]> DataSource(string fileName, string selectString, Type[] parameterTypes)~\\
+\cellcolor{green} & 6 & \verb~37~ & & \verb~    {~\\
+\cellcolor{green} & 6 & \verb~38~ & & \verb~        string connectionString = string.Format(connectionTemplate, GetFullFilename(fileName));~\\
+\cellcolor{green} & 6 & \verb~39~ & & \verb~        IDataAdapter adapter = new OleDbDataAdapter(selectString, connectionString);~\\
+\cellcolor{green} & 6 & \verb~40~ & & \verb~        DataSet dataSet = new DataSet();~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~42~ & & \verb~        try~\\
+\cellcolor{green} & 6 & \verb~43~ & & \verb~        {~\\
+\cellcolor{green} & 6 & \verb~44~ & & \verb~            adapter.Fill(dataSet);~\\
+\cellcolor{gray} &  & \verb~45~ & & \verb~~\\
+\cellcolor{green} & 39 & \verb~46~ & & \verb~            foreach (DataRow row in dataSet.Tables[0].Rows)~\\
+\cellcolor{green} & 12 & \verb~47~ & & \verb~                yield return ConvertParameters(row.ItemArray, parameterTypes);~\\
+\cellcolor{green} & 3 & \verb~48~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~49~ & & \verb~        finally~\\
+\cellcolor{green} & 6 & \verb~50~ & & \verb~        {~\\
+\cellcolor{green} & 6 & \verb~51~ & & \verb~            IDisposable disposable = adapter as IDisposable;~\\
+\cellcolor{green} & 6 & \verb~52~ & & \verb~            disposable.Dispose();~\\
+\cellcolor{green} & 6 & \verb~53~ & & \verb~        }~\\
+\cellcolor{green} & 3 & \verb~54~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~55~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~56~ & & \verb~    static string GetFullFilename(string filename)~\\
+\cellcolor{green} & 6 & \verb~57~ & & \verb~    {~\\
+\cellcolor{green} & 6 & \verb~58~ & & \verb~        string executable = new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath;~\\
+\cellcolor{green} & 6 & \verb~59~ & & \verb~        return Path.GetFullPath(Path.Combine(Path.GetDirectoryName(executable), filename));~\\
+\cellcolor{green} & 6 & \verb~60~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~61~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~62~ & & \verb~    static object[] ConvertParameters(object[] values, Type[] parameterTypes)~\\
+\cellcolor{green} & 12 & \verb~63~ & & \verb~    {~\\
+\cellcolor{green} & 12 & \verb~64~ & & \verb~        object[] result = new object[values.Length];~\\
+\cellcolor{gray} &  & \verb~65~ & & \verb~~\\
+\cellcolor{green} & 168 & \verb~66~ & & \verb~        for (int idx = 0; idx < values.Length; idx++)~\\
+\cellcolor{orange} & 72 & \verb~67~ & & \verb~            result[idx] = ConvertParameter(values[idx], idx >= parameterTypes.Length ? null : parameterTypes[idx]);~\\
+\cellcolor{gray} &  & \verb~68~ & & \verb~~\\
+\cellcolor{green} & 12 & \verb~69~ & & \verb~        return result;~\\
+\cellcolor{green} & 12 & \verb~70~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~71~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~72~ & & \verb~    /// <summary>~\\
+\cellcolor{gray} &  & \verb~73~ & & \verb~    /// Converts a parameter to its destination parameter type, if necessary.~\\
+\cellcolor{gray} &  & \verb~74~ & & \verb~    /// </summary>~\\
+\cellcolor{gray} &  & \verb~75~ & & \verb~    /// <param name="parameter">The parameter value</param>~\\
+\cellcolor{gray} &  & \verb~76~ & & \verb~    /// <param name="parameterType">The destination parameter type (null if not known)</param>~\\
+\cellcolor{gray} &  & \verb~77~ & & \verb~    /// <returns>The converted parameter value</returns>~\\
+\cellcolor{gray} &  & \verb~78~ & & \verb~    static object ConvertParameter(object parameter, Type parameterType)~\\
+\cellcolor{green} & 72 & \verb~79~ & & \verb~    {~\\
+\cellcolor{orange} & 72 & \verb~80~ & & \verb~        if ((parameter is double || parameter is float) &&~\\
+\cellcolor{green} & 72 & \verb~81~ & & \verb~            (parameterType == typeof(int) || parameterType == typeof(int?)))~\\
+\cellcolor{green} & 12 & \verb~82~ & & \verb~        {~\\
+\cellcolor{gray} &  & \verb~83~ & & \verb~            int intValue;~\\
+\cellcolor{green} & 12 & \verb~84~ & & \verb~            string floatValueAsString = parameter.ToString();~\\
+\cellcolor{gray} &  & \verb~85~ & & \verb~~\\
+\cellcolor{orange} & 12 & \verb~86~ & & \verb~            if (Int32.TryParse(floatValueAsString, out intValue))~\\
+\cellcolor{green} & 12 & \verb~87~ & & \verb~                return intValue;~\\
+\cellcolor{red} & 0 & \verb~88~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~89~ & & \verb~~\\
+\cellcolor{green} & 60 & \verb~90~ & & \verb~        return parameter;~\\
+\cellcolor{green} & 72 & \verb~91~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~92~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{PhD\_AUT\_Project.LoginPage}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & PhD\_AUT\_Project.LoginPage\\
+\textbf{Assembly:} & PhD\_AUT\_Project\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{C:\textbackslash Users\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Pages\textbackslash LoginPage.cs}\end{minipage} \\
+\textbf{Covered lines:} & 18\\
+\textbf{Uncovered lines:} & 5\\
+\textbf{Coverable lines:} & 23\\
+\textbf{Total lines:} & 41\\
+\textbf{Line coverage:} & 78.2\% (18 of 23)\\
+\textbf{Covered branches:} & 5\\
+\textbf{Total branches:} & 6\\
+\textbf{Branch coverage:} & 83.3\% (5 of 6)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{.ctor()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_loginName()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_password()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_confirmPassword(} & 100\% & 1 & 100\%\\
+\hline
+\textbf{Submit()} & 83.33\% & 6 & 100\%\\
+\hline
+\textbf{Cancel()} & 100\% & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{C:\textbackslash Users\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Pages\textbackslash LoginPage.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System.Collections.Generic;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using System.Linq;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using System.Runtime.InteropServices;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using System.Text;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~using System.Threading.Tasks;~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~namespace PhD_AUT_Project~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~    public class LoginPage:Page~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~    {~\\
+\cellcolor{green} & 6 & \verb~12~ & & \verb~        public LoginPage()~\\
+\cellcolor{green} & 6 & \verb~13~ & & \verb~        {~\\
+\cellcolor{green} & 6 & \verb~14~ & & \verb~            currentPage = PageIndex.LoginPage;~\\
+\cellcolor{green} & 6 & \verb~15~ & & \verb~            pageTitle = "Login";~\\
+\cellcolor{green} & 6 & \verb~16~ & & \verb~            loginUserName = "";~\\
+\cellcolor{green} & 6 & \verb~17~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~18~ & & \verb~~\\
+\cellcolor{green} & 15 & \verb~19~ & & \verb~        public string loginName { get; set; }~\\
+\cellcolor{green} & 18 & \verb~20~ & & \verb~        public string password { get; set; }~\\
+\cellcolor{green} & 12 & \verb~21~ & & \verb~        public string confirmPassword { get; set; }~\\
+\cellcolor{gray} &  & \verb~22~ & & \verb~        public Page Submit()~\\
+\cellcolor{green} & 6 & \verb~23~ & & \verb~        {~\\
+\cellcolor{orange} & 6 & \verb~24~ & & \verb~            if(loginName.Contains("User") && password.Contains("pwd"))~\\
+\cellcolor{green} & 6 & \verb~25~ & & \verb~            {~\\
+\cellcolor{green} & 6 & \verb~26~ & & \verb~                if (password == confirmPassword)~\\
+\cellcolor{green} & 3 & \verb~27~ & & \verb~                {~\\
+\cellcolor{green} & 3 & \verb~28~ & & \verb~                    return new MainPage(loginName);~\\
+\cellcolor{gray} &  & \verb~29~ & & \verb~                }~\\
+\cellcolor{green} & 3 & \verb~30~ & & \verb~            }~\\
+\cellcolor{green} & 3 & \verb~31~ & & \verb~            return this;~\\
+\cellcolor{green} & 6 & \verb~32~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~33~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~34~ & & \verb~        public PageIndex Cancel()~\\
+\cellcolor{red} & 0 & \verb~35~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~36~ & & \verb~            loginName = "";~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~            password = "";~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~            return currentPage;~\\
+\cellcolor{red} & 0 & \verb~39~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~40~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{PhD\_AUT\_Project.MainPage}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & PhD\_AUT\_Project.MainPage\\
+\textbf{Assembly:} & PhD\_AUT\_Project\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{C:\textbackslash Users\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Pages\textbackslash MainPage.cs}\end{minipage} \\
+\textbf{Covered lines:} & 6\\
+\textbf{Uncovered lines:} & 26\\
+\textbf{Coverable lines:} & 32\\
+\textbf{Total lines:} & 54\\
+\textbf{Line coverage:} & 18.7\% (6 of 32)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 10\\
+\textbf{Branch coverage:} & 0\% (0 of 10)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{get\_mainMenu()} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_searchText()} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_searchButton()} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_cartButton()} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_todaysDealsDashb} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_ordersLink()} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_customerServiceL} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_rewardsLink()} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_electronicsProdu} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_homeProductsDash} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_computerProducts} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_mensProductsDash} & 100\% & 1 & 0\%\\
+\hline
+\textbf{get\_womensProductsDa} & 100\% & 1 & 0\%\\
+\hline
+\textbf{.ctor(...)} & 100\% & 1 & 100\%\\
+\hline
+\textbf{NavigateToProductPag} & 0\% & 10 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{C:\textbackslash Users\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Pages\textbackslash MainPage.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System.Collections.Generic;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using System.Linq;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using System.Text;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using System.Threading.Tasks;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~namespace PhD_AUT_Project~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    public class MainPage:Page~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~    {~\\
+\cellcolor{red} & 0 & \verb~11~ & & \verb~        public bool mainMenu { get; set; }~\\
+\cellcolor{red} & 0 & \verb~12~ & & \verb~        public string searchText { get; set; }~\\
+\cellcolor{red} & 0 & \verb~13~ & & \verb~        public bool searchButton { get; set; }~\\
+\cellcolor{red} & 0 & \verb~14~ & & \verb~        public bool cartButton { get; set; }~\\
+\cellcolor{red} & 0 & \verb~15~ & & \verb~        public bool todaysDealsDashboard { get; set; }~\\
+\cellcolor{red} & 0 & \verb~16~ & & \verb~        public bool ordersLink { get; set; }~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~        public bool customerServiceLink { get; set; }~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~        public bool rewardsLink { get; set; }~\\
+\cellcolor{red} & 0 & \verb~19~ & & \verb~        public bool electronicsProductsDashboard { get; set; }~\\
+\cellcolor{red} & 0 & \verb~20~ & & \verb~        public bool homeProductsDashboard { get; set; }~\\
+\cellcolor{red} & 0 & \verb~21~ & & \verb~        public bool computerProductsDashboard { get; set; }~\\
+\cellcolor{red} & 0 & \verb~22~ & & \verb~        public bool mensProductsDashboard { get; set; }~\\
+\cellcolor{red} & 0 & \verb~23~ & & \verb~        public bool womensProductsDashboard { get; set; }~\\
+\cellcolor{gray} &  & \verb~24~ & & \verb~~\\
+\cellcolor{green} & 3 & \verb~25~ & & \verb~        public MainPage(string userName)~\\
+\cellcolor{green} & 3 & \verb~26~ & & \verb~        {~\\
+\cellcolor{green} & 3 & \verb~27~ & & \verb~            currentPage = PageIndex.MainPage;~\\
+\cellcolor{green} & 3 & \verb~28~ & & \verb~            loginUserName = userName;~\\
+\cellcolor{green} & 3 & \verb~29~ & & \verb~            pageTitle = "Main";~\\
+\cellcolor{green} & 3 & \verb~30~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~31~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~32~ & & \verb~        public void NavigateToProductPage(string category)~\\
+\cellcolor{red} & 0 & \verb~33~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~34~ & & \verb~            switch(category)~\\
+\cellcolor{gray} &  & \verb~35~ & & \verb~            {~\\
+\cellcolor{gray} &  & \verb~36~ & & \verb~                case "Electronics":~\\
+\cellcolor{red} & 0 & \verb~37~ & & \verb~                    electronicsProductsDashboard = true;~\\
+\cellcolor{red} & 0 & \verb~38~ & & \verb~                    break;~\\
+\cellcolor{gray} &  & \verb~39~ & & \verb~                case "Home":~\\
+\cellcolor{red} & 0 & \verb~40~ & & \verb~                    homeProductsDashboard = true;~\\
+\cellcolor{red} & 0 & \verb~41~ & & \verb~                    break;~\\
+\cellcolor{gray} &  & \verb~42~ & & \verb~                case "Computer":~\\
+\cellcolor{red} & 0 & \verb~43~ & & \verb~                    computerProductsDashboard = true;~\\
+\cellcolor{red} & 0 & \verb~44~ & & \verb~                    break;~\\
+\cellcolor{gray} &  & \verb~45~ & & \verb~                case "Men":~\\
+\cellcolor{red} & 0 & \verb~46~ & & \verb~                    mensProductsDashboard = true;~\\
+\cellcolor{red} & 0 & \verb~47~ & & \verb~                    break;~\\
+\cellcolor{gray} &  & \verb~48~ & & \verb~                case "Women":~\\
+\cellcolor{red} & 0 & \verb~49~ & & \verb~                    womensProductsDashboard = true;~\\
+\cellcolor{red} & 0 & \verb~50~ & & \verb~                    break;~\\
+\cellcolor{gray} &  & \verb~51~ & & \verb~            }~\\
+\cellcolor{red} & 0 & \verb~52~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~53~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~54~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{PhD\_AUT\_Project.Page}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & PhD\_AUT\_Project.Page\\
+\textbf{Assembly:} & PhD\_AUT\_Project\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{C:\textbackslash Users\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Pages\textbackslash Page.cs}\end{minipage} \\
+\textbf{Covered lines:} & 3\\
+\textbf{Uncovered lines:} & 0\\
+\textbf{Coverable lines:} & 3\\
+\textbf{Total lines:} & 21\\
+\textbf{Line coverage:} & 100\% (3 of 3)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{get\_currentPage()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_pageTitle()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{get\_loginUserName()} & 100\% & 1 & 100\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{C:\textbackslash Users\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Pages\textbackslash Page.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System.Collections.Generic;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using System.Linq;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using System.Text;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using System.Threading.Tasks;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~namespace PhD_AUT_Project~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    public enum PageIndex~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        LoginPage = 1,~\\
+\cellcolor{gray} &  & \verb~12~ & & \verb~        MainPage = 2~\\
+\cellcolor{gray} &  & \verb~13~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~14~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~    public class Page~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~    {~\\
+\cellcolor{green} & 11 & \verb~17~ & & \verb~        public PageIndex currentPage { get; set; }~\\
+\cellcolor{green} & 11 & \verb~18~ & & \verb~        public string pageTitle { get; set; }~\\
+\cellcolor{green} & 11 & \verb~19~ & & \verb~        public string loginUserName { get; set; }~\\
+\cellcolor{gray} &  & \verb~20~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{PhD\_AUT\_Project.Tests.LoginPageTests}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & PhD\_AUT\_Project.Tests.LoginPageTests\\
+\textbf{Assembly:} & PhD\_AUT\_Project\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{ers\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Tests\textbackslash LoginPageTests.cs}\end{minipage} \\
+\textbf{Covered lines:} & 21\\
+\textbf{Uncovered lines:} & 0\\
+\textbf{Coverable lines:} & 21\\
+\textbf{Total lines:} & 42\\
+\textbf{Line coverage:} & 100\% (21 of 21)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{VerifyLogin(...)} & 100\% & 1 & 100\%\\
+\hline
+\textbf{VerifyLoginUserName(} & 100\% & 1 & 100\%\\
+\hline
+\textbf{VerifyLoginNavigatio} & 100\% & 1 & 100\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{ers\textbackslash Admin\textbackslash source\textbackslash repos\textbackslash PhD\_AUT\_Project\textbackslash PhD\_AUT\_Project\textbackslash Tests\textbackslash LoginPageTests.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using Xunit;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~namespace PhD_AUT_Project.Tests~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~    [Trait("Category", "Login Tests")]~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~    public class LoginPageTests~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~        [Theory]~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~        [ExcelData("TestData.xlsx", "select * from [Sheet1$]")]~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        public void VerifyLogin(string username, string password, string confirmPassword, int PageIndex, string pageTitl~\\
+\cellcolor{green} & 2 & \verb~12~ & & \verb~        {~\\
+\cellcolor{green} & 2 & \verb~13~ & & \verb~            LoginPage loginPage = new LoginPage();~\\
+\cellcolor{green} & 2 & \verb~14~ & & \verb~            loginPage.loginName = username;~\\
+\cellcolor{green} & 2 & \verb~15~ & & \verb~            loginPage.password = password;~\\
+\cellcolor{green} & 2 & \verb~16~ & & \verb~            loginPage.confirmPassword = confirmPassword;~\\
+\cellcolor{green} & 2 & \verb~17~ & & \verb~            Assert.Equal(PageIndex, (int)loginPage.Submit().currentPage);~\\
+\cellcolor{green} & 2 & \verb~18~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~19~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~20~ & & \verb~        [Theory]~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~        [ExcelData("TestData.xlsx", "select * from [Sheet1$]")]~\\
+\cellcolor{gray} &  & \verb~22~ & & \verb~        public void VerifyLoginUserName(string username, string password, string confirmPassword, int PageIndex, string ~\\
+\cellcolor{green} & 2 & \verb~23~ & & \verb~        {~\\
+\cellcolor{green} & 2 & \verb~24~ & & \verb~            LoginPage loginPage = new LoginPage();~\\
+\cellcolor{green} & 2 & \verb~25~ & & \verb~            loginPage.loginName = username;~\\
+\cellcolor{green} & 2 & \verb~26~ & & \verb~            loginPage.password = password;~\\
+\cellcolor{green} & 2 & \verb~27~ & & \verb~            loginPage.confirmPassword = confirmPassword;~\\
+\cellcolor{green} & 2 & \verb~28~ & & \verb~            Assert.Equal(currentUsername, loginPage.Submit().loginUserName);~\\
+\cellcolor{green} & 2 & \verb~29~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~30~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~31~ & & \verb~        [Theory]~\\
+\cellcolor{gray} &  & \verb~32~ & & \verb~        [ExcelData("TestData.xlsx", "select * from [Sheet1$]")]~\\
+\cellcolor{gray} &  & \verb~33~ & & \verb~        public void VerifyLoginNavigationPageTitle(string username, string password, string confirmPassword, int PageInd~\\
+\cellcolor{green} & 2 & \verb~34~ & & \verb~        {~\\
+\cellcolor{green} & 2 & \verb~35~ & & \verb~            LoginPage loginPage = new LoginPage();~\\
+\cellcolor{green} & 2 & \verb~36~ & & \verb~            loginPage.loginName = username;~\\
+\cellcolor{green} & 2 & \verb~37~ & & \verb~            loginPage.password = password;~\\
+\cellcolor{green} & 2 & \verb~38~ & & \verb~            loginPage.confirmPassword = confirmPassword;~\\
+\cellcolor{green} & 2 & \verb~39~ & & \verb~            Assert.Equal(pageTitle, loginPage.Submit().pageTitle);~\\
+\cellcolor{green} & 2 & \verb~40~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~41~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~42~ & & \verb~}~\\
+\end{longtable}
+\end{document}
