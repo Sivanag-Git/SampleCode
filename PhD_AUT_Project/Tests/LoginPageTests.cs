@@ -3,7 +3,7 @@ using Xunit;
 
 namespace PhD_AUT_Project.Tests
 {
-    [Trait("Category", "Login Tests New")]
+    [Trait("Category", "Login Tests")]
     public class LoginPageTests
     {
         [Theory]
@@ -38,10 +38,5 @@ namespace PhD_AUT_Project.Tests
             loginPage.confirmPassword = confirmPassword;
             Assert.Equal(pageTitle, loginPage.Submit().pageTitle);
         }        
-        
-        public void TestGH()
-        {
-            Assert.Equal(1, 1);
-        }
     }
 }
