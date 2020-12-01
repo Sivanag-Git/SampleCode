@@ -37,11 +37,6 @@ namespace PhD_AUT_Project.Tests
             loginPage.password = password;
             loginPage.confirmPassword = confirmPassword;
             Assert.Equal(pageTitle, loginPage.Submit().pageTitle);
-        }
-        
-        public void TestGH()
-        {
-            Assert.Equal(1, 1);
-        }
+        }        
     }
 }
