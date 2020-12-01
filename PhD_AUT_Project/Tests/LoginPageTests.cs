@@ -39,9 +39,9 @@ namespace PhD_AUT_Project.Tests
             Assert.Equal(pageTitle, loginPage.Submit().pageTitle);
         }        
         
-        public void TestVS()
+        public void TestGH()
         {
-            Assert.Equal(1, 2);
+            Assert.Equal(1, 1);
         }
     }
 }
