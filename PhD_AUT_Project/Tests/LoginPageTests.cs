@@ -3,7 +3,7 @@ using Xunit;
 
 namespace PhD_AUT_Project.Tests
 {
-    [Trait("Category", "Login Tests")]
+    [Trait("Category", "Login Tests1")]
     public class LoginPageTests
     {
         [Theory]
